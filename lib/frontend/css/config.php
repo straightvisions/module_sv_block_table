@@ -109,3 +109,12 @@
 		is_admin() ? '.editor-styles-wrapper .wp-block-table' : '.sv100_sv_content_wrapper article .wp-block-table',
 		$properties
 	);
+
+?>
+
+@media ( max-width: 782px ) {
+	.editor-styles-wrapper .wp-block-table,
+	.sv100_sv_content_wrapper article .wp-block-table {
+		font-size:var(--sv100_sv_common_font_size_small);
+	}
+}
