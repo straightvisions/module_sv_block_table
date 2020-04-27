@@ -13,7 +13,7 @@
 
 	class sv_block_table extends init {
 		public function init() {
-			$this->set_module_title( __( 'Block: Paragraph', 'sv100' ) )
+			$this->set_module_title( __( 'Block: Table', 'sv100' ) )
 				->set_module_desc( __( 'Settings for Gutenberg Block', 'sv100' ) )
 				->load_settings()
 				->register_scripts()
