@@ -1,25 +1,16 @@
 <?php
 	namespace sv100;
 
-	/**
-	 * @version         4.001
-	 * @author			straightvisions GmbH
-	 * @package			sv100
-	 * @copyright		2019 straightvisions GmbH
-	 * @link			https://straightvisions.com
-	 * @since			1.000
-	 * @license			See license.txt or https://straightvisions.com
-	 */
-
 	class sv_block_table extends init {
 		public function init() {
 			$this->set_module_title( __( 'Block: Table', 'sv100' ) )
 				->set_module_desc( __( 'Settings for Gutenberg Block', 'sv100' ) )
+				->set_css_cache_active()
 				->set_section_title( $this->get_module_title() )
 				->set_section_desc( $this->get_module_desc() )
 				->set_section_type( 'settings' )
-				->set_section_template_path( $this->get_path( 'lib/backend/tpl/settings.php' ) )
-				->set_section_order(130)
+				->set_section_template_path()
+				->set_section_order(5000)
 				->get_root()
 				->add_section( $this );
 		}
@@ -65,20 +56,6 @@
 				->set_title( __( 'Border', 'sv100' ) )
 				->set_is_responsive(true)
 				->load_type( 'border' );
-
-			return $this;
-		}
-
-		protected function register_scripts(): sv_block_table {
-			// Register Styles
-			$this->get_script( 'common' )
-				->set_is_gutenberg()
-				->set_path( 'lib/frontend/css/common.css' );
-
-			$this->get_script( 'config' )
-				->set_path( 'lib/frontend/css/config.php' )
-				->set_is_gutenberg()
-				->set_inline( true );
 
 			return $this;
 		}
