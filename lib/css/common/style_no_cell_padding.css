@@ -1,0 +1,3 @@
+.wp-block-table.is-style-no-cell-padding td, .wp-block-table.is-style-no-cell-padding th{
+	padding:0;
+}

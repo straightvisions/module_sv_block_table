@@ -59,6 +59,22 @@
 
 			return $this;
 		}
+		
+		protected function register_scripts(): sv_block_table {
+			parent::register_scripts();
+			
+			// Register Default Styles
+			$this->get_script( 'no-border' )
+			     ->set_is_gutenberg()
+			     ->set_path( 'lib/css/common/style_no_border.css' );
+			
+			$this->get_script( 'no-cell-padding' )
+			     ->set_is_gutenberg()
+			     ->set_path( 'lib/css/common/style_no_cell_padding.css' );
+			
+			return $this;
+		}
+		
 		public function enqueue_scripts(): sv_block_table {
 			if(!$this->has_block_frontend('table')){
 				return $this;
@@ -68,8 +84,9 @@
 				$this->load_settings()->register_scripts();
 			}
 
-			$this->get_script( 'common' )->set_is_enqueued();
-			$this->get_script( 'config' )->set_is_enqueued();
+			foreach($this->get_scripts() as $script){
+				$script->set_is_enqueued();
+			}
 
 			return $this;
 		}

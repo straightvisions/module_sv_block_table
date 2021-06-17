@@ -1,0 +1,3 @@
+.wp-block-table.is-style-no-border td, .wp-block-table.is-style-no-border th{
+	border-width:0;
+}
