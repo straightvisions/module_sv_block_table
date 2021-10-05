@@ -1,10 +1,10 @@
 .editor-styles-wrapper .wp-block-table,
-.sv100_sv_content_wrapper article .wp-block-table
+.wp-block-table
 {
 	overflow: hidden;
 }
 .editor-styles-wrapper .wp-block-table table,
-.sv100_sv_content_wrapper article .wp-block-table table{
+.wp-block-table table{
 	border-collapse: collapse;
 	border-spacing: 0;
 }
