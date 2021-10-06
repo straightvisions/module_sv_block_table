@@ -14,10 +14,10 @@
 .wp-block-table .has-fixed-layout th {
 	word-break: break-word;
 }
-.wp-block-table.alignleft, .wp-block-table.aligncenter, .wp-block-table.alignright {
+/*.wp-block-table.alignleft, .wp-block-table.aligncenter, .wp-block-table.alignright {
 	display: table;
 	width: auto;
-}
+}*/
 .wp-block-table.alignleft td,
 .wp-block-table.alignleft th, .wp-block-table.aligncenter td,
 .wp-block-table.aligncenter th, .wp-block-table.alignright td,
