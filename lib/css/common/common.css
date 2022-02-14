@@ -8,3 +8,13 @@
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.editor-styles-wrapper .wp-block-table td:first-child,
+.wp-block-table td:first-child
+{
+	white-space:nowrap;
+}
+
+.editor-styles-wrapper .wp-block-table.aligncenter,
+.wp-block-table.aligncenter{
+	max-width: fit-content !important;
+}
