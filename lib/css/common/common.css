@@ -1,6 +1,5 @@
 .editor-styles-wrapper .wp-block-table,
-.wp-block-table
-{
+.wp-block-table {
 	overflow: hidden;
 }
 .editor-styles-wrapper .wp-block-table table,
@@ -8,8 +7,8 @@
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.editor-styles-wrapper .wp-block-table td:first-child,
-.wp-block-table td:first-child
+.editor-styles-wrapper .wp-block-table table.has-fixed-layout td:first-child,
+.wp-block-table table.has-fixed-layout td:first-child
 {
 	white-space:nowrap;
 }
