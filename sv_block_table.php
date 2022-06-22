@@ -12,6 +12,7 @@
 				->set_section_order(5000)
 				->set_section_icon('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 6h-6v-6h6v6zm9-6h-6v6h6v-6zm9 0h-6v6h6v-6zm-18 9h-6v6h6v-6zm9 0h-6v6h6v-6zm9 0h-6v6h6v-6zm-18 9h-6v6h6v-6zm9 0h-6v6h6v-6zm9 0h-6v6h6v-6z"/></svg>')
 				->set_block_handle('wp-block-table')
+				->set_block_name('core/table')
 				->get_root()
 				->add_section( $this );
 		}
@@ -79,21 +80,6 @@
 				->set_is_responsive(true)
 				->load_type( 'border' );
 
-			return $this;
-		}
-		
-		protected function register_scripts(): sv_block_table {
-			parent::register_scripts();
-			
-			// Register Default Styles
-			$this->get_script( 'no-border' )
-			     ->set_is_gutenberg()
-			     ->set_path( 'lib/css/common/style_no_border.css' );
-			
-			$this->get_script( 'no-cell-padding' )
-			     ->set_is_gutenberg()
-			     ->set_path( 'lib/css/common/style_no_cell_padding.css' );
-			
 			return $this;
 		}
 	}
