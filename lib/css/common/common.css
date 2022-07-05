@@ -17,3 +17,7 @@
 .wp-block-table.aligncenter{
 	max-width: fit-content !important;
 }
+
+.wp-block-table th{
+	text-align:left;
+}
