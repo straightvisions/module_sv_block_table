@@ -7,10 +7,5 @@
 				echo $module->get_setting( 'cells_padding' )->form();
 			?>
 		</div>
-		<div class="sv_setting_flex">
-			<?php
-				echo $module->get_setting( 'cells_border' )->form();
-			?>
-		</div>
 	</div>
 <?php } ?>

@@ -58,11 +58,6 @@
 				->set_is_responsive(true)
 				->load_type( 'margin' );
 
-			$this->get_setting( 'border' )
-				->set_title( __( 'Border', 'sv100' ) )
-				->set_is_responsive(true)
-				->load_type( 'border' );
-
 			$this->get_setting( 'cells_margin' )
 				->set_title( __( 'Margin', 'sv100' ) )
 				->set_is_responsive(true)
@@ -72,11 +67,6 @@
 				->set_title( __( 'Padding', 'sv100' ) )
 				->set_is_responsive(true)
 				->load_type( 'margin' );
-
-			$this->get_setting( 'cells_border' )
-				->set_title( __( 'Border', 'sv100' ) )
-				->set_is_responsive(true)
-				->load_type( 'border' );
 
 			return $this;
 		}
