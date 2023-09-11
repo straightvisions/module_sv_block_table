@@ -7,11 +7,6 @@
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.editor-styles-wrapper .wp-block-table table.has-fixed-layout td:first-child,
-.wp-block-table table.has-fixed-layout td:first-child
-{
-	white-space:nowrap;
-}
 
 .editor-styles-wrapper .wp-block-table.aligncenter,
 .wp-block-table.aligncenter{
